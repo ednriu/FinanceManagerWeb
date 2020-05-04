@@ -1,0 +1,126 @@
+body
+{
+	background-color:#F0F8FF;
+	color:#ffffff;
+}
+
+div
+{
+	border: 1px solid #000000;
+}
+
+#container
+{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#logo
+{
+	background-color:#0055BB;
+	font-family: 'Black Ops One', cursive;
+	color:black;
+	text-align:center;
+	padding:15px;
+}
+
+#menu
+{
+	clear:both;
+	background-color:red;
+	font-family: 'Yrsa', serif;
+	height: 25px;
+}
+
+#content
+{
+	float:left;
+	padding:20px;
+	width:800px;
+	color:black;
+	font-family: 'Raleway', sans-serif;
+	font-size:10px;
+}
+#panelboczny
+{
+	clear:both;
+	width:140px;
+	min-height:620px;
+	padding:10px;
+	background-color:#0066CC;
+}
+
+#status
+{
+	float:left;
+	width:120px;
+	height:40px;
+	padding:10px;
+	background-color:#1177DD;
+	border-radius:10px;
+}	
+#reklama
+{
+	clear:both;
+	width:120px;
+	height:200px;
+	padding:10px;
+	background-color:#1177DD;
+	border-radius:10px;
+	margin-top:10px;
+}
+
+#footer
+{
+	clear:both;
+	background-color:#CCCC99;
+	color: white;
+	text-align:center;
+	height:30px;
+	padding:10px;
+}
+
+h2
+{
+	color:green;
+	text-align:center;
+}
+
+ul.menupoziome, ul.menupoziome li {
+	display: block;
+	list-style: none;
+	padding: 0;
+}
+
+ul.menupoziome {
+	float: left;
+	background-color: #80ccff;
+	padding: 1px 0 1px 1px;
+	border: 1px solid #000;
+}
+
+ul.menupoziome li {
+	float: left;
+}
+
+ul.menupoziome a:link, ul.menupoziome a:visited {
+	text-decoration: none;
+	display: block;
+	font-weight: bold;
+	background: #ff99ff;
+	color: #fff;
+	padding: 10px 10px;
+	border-right: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+ul.menupoziome a:hover {
+	background-color: #800;
+	background-image: url("tlo2.gif");
+}
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Yrsa', serif;
+font-family: 'Black Ops One', cursive;
