@@ -4,7 +4,7 @@
 	<head>
 	
 		<meta charset="utf-8">
-		<title>Finanse Osobiste</title>
+		<title>Finanse Osobiste - Dodaj Wydatek</title>
 		<meta name="description" content="Opis zawartości strony dla wyszukiwarek">
 		<meta name="keywords" content="słowa, kluczowe, opisujące, zawartość">
 		<meta name="author" content="Andrzej Konicki">
@@ -25,24 +25,73 @@
 			
 			<div class="topnav">
 				<ul>
-				<li><a href="rejestracja.html" target=_self>Dodaj Przychód</a></li><li><a href="rejestracja.html" target=_self>Dodaj Wydatek</a></li><li><a href="rejestracja.html" target=_self>Przeglądaj Bilans</a></li><li><a href="rejestracja.html" target=_self>Ustawienia</a></li><li><a href="rejestracja.html" target=_self>Wyloguj</a></li>
+				<li><a href="przychod.html" target=_self>Dodaj Przychód</a></li><li><a href="wydatek.html" target=_self>Dodaj Wydatek</a></li><li><a href="bilans.html" target=_self>Przeglądaj Bilans</a></li><li><a href="ustawienia.html" target=_self>Ustawienia</a></li><li><a href="logowanie.html" target=_self>Wyloguj</a></li>
 				</ul>
 			</div>
 			
 			
 			<div id="panelboczny">
-				<div id="status">
-					Status Użytkownika		
+				<div class="sidepanel">
+					<h1>Status</h1>		
 				</div>
 
-				<div id="zegar">
-					<script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt=Dzis sa imieniny:&mig=false&kus=false"></script>
+				<div class="sidepanel">
+					<h1>Imieniny</h1>
+					<script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt="></script>
+					
+				</div>
+				
+				<div id="registration_panel">
+					Rejestracja Użytkownika
+					<p>
+						<form action="login.php" method="post">
+						<label for="imie">Imię:</label>
+						<input type="text" id="imie" placeholder="Twoje Imię"> <br>
+						<label for="email">Email::</label>
+						<input type="text" id="email" placeholder="Twój @dres email"> <br>
+						<label for="pass">Hasło:</label>
+						<input type="password" id="pass">
+						<input type="submit" value="Zarejestruj">
+						</form>					
+					</p>
 				</div>
 			</div>			
 			<div id="content">
-				<h1>Nagłówek</h1>
-				<p><h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h3></p>
-
+				<h1>Dodaj Wydatek</h1>
+				<form action="login.php" method="post">
+						<label for="kwota">Kwota:</label>
+						<input type="number" id="kwota"> <br>
+						<label for="date">Data:</label>
+						<input type="date" id="data" name="data"><br>
+						
+						<label for="sposob_platnosci">Sposób Płatności:</label><br>
+						<input type="radio" name="sposob_platnosci" value="gotowka">Gotówka<br>
+						<input type="radio" name="sposob_platnosci" value="karta_platnicza">Karta Płatnicza<br>
+						<input type="radio" name="sposob_platnosci" value="karta_debetowa">Karta Debetowa<br>
+						
+						<label for="kategoria">Kategoria:</label><br>
+						<input type="radio" name="kategoria" value="jedzenie">Jedzenie<br>
+						<input type="radio" name="kategoria" value="mieszkanie">Mieszkanie<br>
+						<input type="radio" name="kategoria" value="transport">Transport<br>
+						<input type="radio" name="kategoria" value="telekomunikacja">Telkomunikacja<br>
+						<input type="radio" name="kategoria" value="zdrowie">Opieka Zdrowotna<br>
+						<input type="radio" name="kategoria" value="higiena">Higiena<br>
+						<input type="radio" name="kategoria" value="ubranie">Ubranie<br>
+						<input type="radio" name="kategoria" value="dzieci">Dzieci<br>
+						<input type="radio" name="kategoria" value="rozrywka">Rozrywka<br>
+						<input type="radio" name="kategoria" value="wycieczka">Wycieczka<br>
+						<input type="radio" name="kategoria" value="szkolenia">Szkolenia<br>
+						<input type="radio" name="kategoria" value="ksiazki">Książki<br>
+						<input type="radio" name="kategoria" value="oszczednosci">Oszczędności<br>
+						<input type="radio" name="kategoria" value="emerytura">Emerytura<br>
+						<input type="radio" name="kategoria" value="dlugi">Spłata Długów<br>
+						<input type="radio" name="kategoria" value="darowizna">Darowizna<br>
+						<input type="radio" name="kategoria" value="inne">Inne<br>
+						<label for="komentarz">Komentarz:</label><br>
+						<input type="text" id="komentarz"><br>
+						<input type="submit" value="Dodaj">
+						<input type="button" value="Anuluj">
+				</form>
 			</div>
 			
 			<div id="footer">

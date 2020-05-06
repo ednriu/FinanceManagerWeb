@@ -4,7 +4,7 @@
 	<head>
 	
 		<meta charset="utf-8">
-		<title>Finanse Osobiste</title>
+		<title>Finanse Osobiste - Ustawienia</title>
 		<meta name="description" content="Opis zawartości strony dla wyszukiwarek">
 		<meta name="keywords" content="słowa, kluczowe, opisujące, zawartość">
 		<meta name="author" content="Andrzej Konicki">
@@ -25,18 +25,35 @@
 			
 			<div class="topnav">
 				<ul>
-				<li><a href="rejestracja.html" target=_self>Dodaj Przychód</a></li><li><a href="rejestracja.html" target=_self>Dodaj Wydatek</a></li><li><a href="rejestracja.html" target=_self>Przeglądaj Bilans</a></li><li><a href="rejestracja.html" target=_self>Ustawienia</a></li><li><a href="rejestracja.html" target=_self>Wyloguj</a></li>
+				<li><a href="przychod.html" target=_self>Dodaj Przychód</a></li><li><a href="wydatek.html" target=_self>Dodaj Wydatek</a></li><li><a href="bilans.html" target=_self>Przeglądaj Bilans</a></li><li><a href="ustawienia.html" target=_self>Ustawienia</a></li><li><a href="logowanie.html" target=_self>Wyloguj</a></li>
 				</ul>
 			</div>
 			
 			
 			<div id="panelboczny">
-				<div id="status">
-					Status Użytkownika		
+				<div class="sidepanel">
+					<h1>Status</h1>		
 				</div>
 
-				<div id="zegar">
-					<script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt=Dzis sa imieniny:&mig=false&kus=false"></script>
+				<div class="sidepanel">
+					<h1>Imieniny</h1>
+					<script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt="></script>
+					
+				</div>
+				
+				<div id="registration_panel">
+					Rejestracja Użytkownika
+					<p>
+						<form action="login.php" method="post">
+						<label for="imie">Imię:</label>
+						<input type="text" id="imie" placeholder="Twoje Imię"> <br>
+						<label for="email">Email::</label>
+						<input type="text" id="email" placeholder="Twój @dres email"> <br>
+						<label for="pass">Hasło:</label>
+						<input type="password" id="pass">
+						<input type="submit" value="Zarejestruj">
+						</form>					
+					</p>
 				</div>
 			</div>			
 			<div id="content">
