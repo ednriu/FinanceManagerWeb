@@ -62,12 +62,24 @@
 							<label for="date">Data:</label>
 							<input type="date" id="datep" name="data">
 							<label for="kategoria">Kategoria:</label>
-							<div class="radio_box">
-								<input type="radio" name="kategoria" value="Wynagrodzenie">Wynagrodzenie</input><br>
-								<input type="radio" name="kategoria" value="Odsetki">Odsetki Bankowe</input><br>
-								<input type="radio" name="kategoria" value="Allegro">Sprzedaż na Allegro</input><br>
-								<input type="radio" name="kategoria" value="Inne">Inne</input><br>
-							</div>
+
+								<label class="container">Wynagrodzenie za prace
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="container">Odsetki
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="container">Allegro
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="container">Inne
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+
 							<label for="kategoria">Komentarz:</label><br>
 							<textarea id="komentarz" rows="4" cols="20"></textarea><br>
 							<input type="submit" value="Dodaj">
