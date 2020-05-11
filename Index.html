@@ -10,14 +10,14 @@
 		<meta name="author" content="Andrzej Konicki">
 		
 		<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
-    
 		<link rel="stylesheet" href="style.css">
-		<script src="skrypt.js"></script>	
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rye&display=swap" rel="stylesheet"
+		<script type="text/javascript" src="script.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rye&display=swap" rel="stylesheet">
     
 	</head>
 
 	<body>
+	
 		<div id="container">
 			<div id="logo">
 				<h1>Moje Finanse</h1>
@@ -32,19 +32,35 @@
 			
 			<div id="panelboczny">
 				<div class="sidepanel">
-					<h1>Status</h1>		
+					<h1>Status</h1>
+					<p>Zalogowany</p>
 				</div>
 
 				<div class="sidepanel">
 					<h1>Imieniny</h1>
-					<script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt="></script>
-					
+					<p><script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt="></script></p>					
 				</div>
 				
-				<div id="registration_panel">
-					Rejestracja Użytkownika
+				<div id="login_panel">
+					<h1>Logowanie</h1>
 					<p>
-						<form action="login.php" method="post">
+						<form action="_action.php" method="post">
+						<input type="text" id="login" placeholder="Login:">
+						<input type="password" id="pass" placeholder="Hasło:">
+						<input type="submit" value="Zaloguj">
+						</form>					
+					</p>
+				</div>
+			</div>			
+			<div id="content">
+			
+				<h1>Nagłówek</h1>
+				<p><h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h3></p>
+
+
+				Rejestracja Użytkownika
+					<p>
+						<form action="-action.php" method="post">
 						<label for="imie">Imię:</label>
 						<input type="text" id="imie" placeholder="Twoje Imię"> <br>
 						<label for="email">Email::</label>
@@ -54,12 +70,6 @@
 						<input type="submit" value="Zarejestruj">
 						</form>					
 					</p>
-				</div>
-			</div>			
-			<div id="content">
-				<h1>Nagłówek</h1>
-				<p><h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h3></p>
-
 			</div>
 			
 			<div id="footer">

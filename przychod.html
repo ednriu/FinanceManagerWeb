@@ -32,26 +32,22 @@
 			
 			<div id="panelboczny">
 				<div class="sidepanel">
-					<h1>Status</h1>		
+					<h1>Status</h1>
+					<p>Zalogowany</p>
 				</div>
 
 				<div class="sidepanel">
 					<h1>Imieniny</h1>
-					<script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt="></script>
-					
+					<p><script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt="></script></p>					
 				</div>
 				
-				<div id="registration_panel">
-					Rejestracja Użytkownika
+				<div id="login_panel">
+					<h1>Logowanie</h1>
 					<p>
-						<form action="login.php" method="post">
-						<label for="imie">Imię:</label>
-						<input type="text" id="imie" placeholder="Twoje Imię"> <br>
-						<label for="email">Email::</label>
-						<input type="text" id="email" placeholder="Twój @dres email"> <br>
-						<label for="pass">Hasło:</label>
-						<input type="password" id="pass">
-						<input type="submit" value="Zarejestruj">
+						<form action="_action.php" method="post">
+						<input type="text" id="login" placeholder="Login:">
+						<input type="password" id="pass" placeholder="Hasło:">
+						<input type="submit" value="Zaloguj">
 						</form>					
 					</p>
 				</div>
@@ -59,22 +55,25 @@
 			
 			<div id="content">
 				<h1>Dodaj Przychód</h1>
-				<form action="login.php" method="post">
-						<label for="kwota">Kwota:</label>
-						<input type="number" id="kwota"><br>
-						<label for="date">Data:</label>
-						<input type="date" id="data" name="data"><br>
-						<label for="kategoria">Kategoria:</label><br>
-						<input type="radio" name="kategoria" value="Wynagrodzenie">Wynagrodzenie<br>
-						<input type="radio" name="kategoria" value="Odsetki">Odsetki Bankowe<br>
-						<input type="radio" name="kategoria" value="Allegro">Sprzedaż na Allegro<br>
-						<input type="radio" name="kategoria" value="Inne">Inne<br>
-						<label for="kategoria">Komentarz:</label><br>
-						<input type="text" id="komentarz"><br>
-						<input type="submit" value="Dodaj">
-						<input type="button" value="Anuluj">
-				</form>					
-
+				<div id="formularz_dane"
+					<form action="login.php" method="post">
+							<label for="kwota">Kwota:</label>
+							<input name="kwota" type="text" id="kwota">
+							<label for="date">Data:</label>
+							<input type="date" id="datep" name="data">
+							<label for="kategoria">Kategoria:</label>
+							<div class="radio_box">
+								<input type="radio" name="kategoria" value="Wynagrodzenie">Wynagrodzenie</input><br>
+								<input type="radio" name="kategoria" value="Odsetki">Odsetki Bankowe</input><br>
+								<input type="radio" name="kategoria" value="Allegro">Sprzedaż na Allegro</input><br>
+								<input type="radio" name="kategoria" value="Inne">Inne</input><br>
+							</div>
+							<label for="kategoria">Komentarz:</label><br>
+							<textarea id="komentarz" rows="4" cols="20"></textarea><br>
+							<input type="submit" value="Dodaj">
+							<input type="button" value="Anuluj">
+					</form>
+				</div>
 			</div>
 			
 			<div id="footer">
@@ -82,6 +81,7 @@
 			</div>
 			
 		</div>
-	</body>
-	
+		
+		<script type="text/javascript" src="scr_wydatki_przychody.js"></script>
+	</body>	
 </html>

@@ -12,7 +12,6 @@
 		<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
     
 		<link rel="stylesheet" href="style.css">
-		<script src="skrypt.js"></script>	
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rye&display=swap" rel="stylesheet"
     
 	</head>
@@ -32,66 +31,66 @@
 			
 			<div id="panelboczny">
 				<div class="sidepanel">
-					<h1>Status</h1>		
+					<h1>Status</h1>
+					<p>Zalogowany</p>
 				</div>
 
 				<div class="sidepanel">
 					<h1>Imieniny</h1>
-					<script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt="></script>
-					
+					<p><script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt="></script></p>					
 				</div>
 				
-				<div id="registration_panel">
-					Rejestracja Użytkownika
+				<div id="login_panel">
+					<h1>Logowanie</h1>
 					<p>
-						<form action="login.php" method="post">
-						<label for="imie">Imię:</label>
-						<input type="text" id="imie" placeholder="Twoje Imię"> <br>
-						<label for="email">Email::</label>
-						<input type="text" id="email" placeholder="Twój @dres email"> <br>
-						<label for="pass">Hasło:</label>
-						<input type="password" id="pass">
-						<input type="submit" value="Zarejestruj">
+						<form action="_action.php" method="post">
+						<input type="text" id="login" placeholder="Login:">
+						<input type="password" id="pass" placeholder="Hasło:">
+						<input type="submit" value="Zaloguj">
 						</form>					
 					</p>
 				</div>
 			</div>			
 			<div id="content">
 				<h1>Dodaj Wydatek</h1>
-				<form action="login.php" method="post">
-						<label for="kwota">Kwota:</label>
-						<input type="number" id="kwota"> <br>
-						<label for="date">Data:</label>
-						<input type="date" id="data" name="data"><br>
-						
-						<label for="sposob_platnosci">Sposób Płatności:</label><br>
-						<input type="radio" name="sposob_platnosci" value="gotowka">Gotówka<br>
-						<input type="radio" name="sposob_platnosci" value="karta_platnicza">Karta Płatnicza<br>
-						<input type="radio" name="sposob_platnosci" value="karta_debetowa">Karta Debetowa<br>
-						
-						<label for="kategoria">Kategoria:</label><br>
-						<input type="radio" name="kategoria" value="jedzenie">Jedzenie<br>
-						<input type="radio" name="kategoria" value="mieszkanie">Mieszkanie<br>
-						<input type="radio" name="kategoria" value="transport">Transport<br>
-						<input type="radio" name="kategoria" value="telekomunikacja">Telkomunikacja<br>
-						<input type="radio" name="kategoria" value="zdrowie">Opieka Zdrowotna<br>
-						<input type="radio" name="kategoria" value="higiena">Higiena<br>
-						<input type="radio" name="kategoria" value="ubranie">Ubranie<br>
-						<input type="radio" name="kategoria" value="dzieci">Dzieci<br>
-						<input type="radio" name="kategoria" value="rozrywka">Rozrywka<br>
-						<input type="radio" name="kategoria" value="wycieczka">Wycieczka<br>
-						<input type="radio" name="kategoria" value="szkolenia">Szkolenia<br>
-						<input type="radio" name="kategoria" value="ksiazki">Książki<br>
-						<input type="radio" name="kategoria" value="oszczednosci">Oszczędności<br>
-						<input type="radio" name="kategoria" value="emerytura">Emerytura<br>
-						<input type="radio" name="kategoria" value="dlugi">Spłata Długów<br>
-						<input type="radio" name="kategoria" value="darowizna">Darowizna<br>
-						<input type="radio" name="kategoria" value="inne">Inne<br>
-						<label for="komentarz">Komentarz:</label><br>
-						<input type="text" id="komentarz"><br>
-						<input type="submit" value="Dodaj">
-						<input type="button" value="Anuluj">
-				</form>
+				<div id="formularz_dane">
+					<form action="login.php" method="post" id="wydatki">
+							<label for="kwota">Kwota:</label>
+							<input type="number" id="kwota"><br>
+							<label for="datep">Data:</label>
+							<input type="date" id="datep"><br>						
+							<label for="sposob_platnosci">Sposób Płatności:</label>
+							<div class="radio_box">
+								<input type="radio" name="sposob_platnosci" value="gotowka">Gotówka<br>
+								<input type="radio" name="sposob_platnosci" value="karta_platnicza">Karta Płatnicza<br>
+								<input type="radio" name="sposob_platnosci" value="karta_debetowa">Karta Debetowa<br>
+							</div>
+							<label for="kategoria">Kategoria:</label>
+							<div class="radio_box">
+								<input type="radio" name="kategoria" value="jedzenie">Jedzenie<br>
+								<input type="radio" name="kategoria" value="mieszkanie">Mieszkanie<br>
+								<input type="radio" name="kategoria" value="transport">Transport<br>
+								<input type="radio" name="kategoria" value="telekomunikacja">Telkomunikacja<br>
+								<input type="radio" name="kategoria" value="zdrowie">Opieka Zdrowotna<br>
+								<input type="radio" name="kategoria" value="higiena">Higiena<br>
+								<input type="radio" name="kategoria" value="ubranie">Ubranie<br>
+								<input type="radio" name="kategoria" value="dzieci">Dzieci<br>
+								<input type="radio" name="kategoria" value="rozrywka">Rozrywka<br>
+								<input type="radio" name="kategoria" value="wycieczka">Wycieczka<br>
+								<input type="radio" name="kategoria" value="szkolenia">Szkolenia<br>
+								<input type="radio" name="kategoria" value="ksiazki">Książki<br>
+								<input type="radio" name="kategoria" value="oszczednosci">Oszczędności<br>
+								<input type="radio" name="kategoria" value="emerytura">Emerytura<br>
+								<input type="radio" name="kategoria" value="dlugi">Spłata Długów<br>
+								<input type="radio" name="kategoria" value="darowizna">Darowizna<br>
+								<input type="radio" name="kategoria" value="inne">Inne<br>
+							</div>
+							<label for="komentarz">Komentarz:</label><br>
+							<textarea id="komentarz"></textarea><br>
+							<input type="submit" value="Dodaj">
+							<input type="button" value="Anuluj">
+					</form>
+				</div>
 			</div>
 			
 			<div id="footer">
@@ -99,6 +98,7 @@
 			</div>
 			
 		</div>
+		<script type="text/javascript" src="scr_wydatki_przychody.js"></script>
 	</body>
 	
 </html>
