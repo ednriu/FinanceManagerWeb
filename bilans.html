@@ -53,9 +53,44 @@
 				</div>
 			</div>			
 			<div id="content">
-				<h1>Przeglądanie Bilansu</h1>
-				Bilans
-
+				<h1>Przeglądaj Bilans</h1>
+				<div id="formularz_bilans">
+					<form action="_action.php" method="post">
+								<label class="container">Bieżący Miesiąc
+									<input type="radio" name="radio" checked>
+									<span class="checkmark"></span>
+								</label>
+								<label class="container">Poprzedni Miesiąc
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="container">Bieżący Rok
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="container">Niestandardowe
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<br>
+								<label for="datep1">Data początkowa:</label>
+								<input type="date" id="datep1" name="data">
+								<label for="datep2">Data końcowa:</label>
+								<input type="date" id="datep2" name="data"><br>
+								<input type="submit" value="Pokaż">
+					</form>
+				</div>				
+					<table id="bilans_tab">
+						<tr>
+							<td>Jedzenie</td> <td>-58</td>
+						</tr>
+						<tr>
+							<td>Higiena</td> <td>-45</td>
+						</tr>
+						<tr>
+							<td>Zakupy Allegro</td> <td>-108</td>
+						</tr>
+					</table>
 			</div>
 			
 			<div id="footer">
