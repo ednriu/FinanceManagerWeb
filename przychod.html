@@ -12,12 +12,13 @@
 		<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
     
 		<link rel="stylesheet" href="style.css">
-		<script src="skrypt.js"></script>	
+		<script type="text/javascript" src="scr_wydatki_przychody.js"></script>	
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rye&display=swap" rel="stylesheet"
+	
     
 	</head>
 
-	<body>
+	<body onload="TodayDate();">
 		<div id="container">
 			<div id="logo">
 				<h1>Moje Finanse</h1>
@@ -56,10 +57,10 @@
 			<div id="content">
 				<h1>Dodaj Przychód</h1>
 				<div id="formularz_dane"
-					<form action="login.php" method="post">
+					<form action="login.php" method="post"/>
 							<label for="kwota">Kwota:</label>
-							<input name="kwota" type="text" id="kwota">
-							<label for="date">Data:</label>
+							<input type="number" id="kwota"><br>
+							<label for="datep">Data:</label>
 							<input type="date" id="datep" name="data">
 							<label for="kategoria">Kategoria:</label>
 
@@ -80,20 +81,17 @@
 									<span class="checkmark"></span>
 								</label>
 
-							<label for="kategoria">Komentarz:</label><br>
+							<label for="komentarz">Komentarz:</label><br>
 							<textarea id="komentarz" rows="4" cols="20"></textarea><br>
 							<input type="submit" value="Dodaj">
 							<input type="button" value="Anuluj">
-					</form>
 				</div>
 			</div>
-			
 			<div id="footer">
 				Wszelkie prawa zastrzeżone	
 			</div>
 			
-		</div>
-		
-		<script type="text/javascript" src="scr_wydatki_przychody.js"></script>
+		</div>	
+
 	</body>	
 </html>

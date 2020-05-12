@@ -12,9 +12,9 @@
 		<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
     
 		<link rel="stylesheet" href="style.css">
-		<script src="skrypt.js"></script>	
+		<script type="text/javascript" src="scr_wydatki_przychody.js"></script>	
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rye&display=swap" rel="stylesheet"
-    
+
 	</head>
 
 	<body>
@@ -69,14 +69,14 @@
 									<span class="checkmark"></span>
 								</label>
 								<label class="container">Niestandardowe
-									<input type="radio" name="radio">
+									<input type="radio" name="radio" onclick="handleClick(this);"/>
 									<span class="checkmark"></span>
 								</label>
 								<br>
 								<label for="datep1">Data początkowa:</label>
-								<input type="date" id="datep1" name="data">
+								<input type="date" id="datep1" name="data" disabled="true'=">
 								<label for="datep2">Data końcowa:</label>
-								<input type="date" id="datep2" name="data"><br>
+								<input type="date" id="datep2" name="data" disabled="true"><br>
 								<input type="submit" value="Pokaż">
 					</form>
 				</div>				

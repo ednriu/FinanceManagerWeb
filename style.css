@@ -82,14 +82,6 @@ body
 	text-align:justify;
 }
 
-#wyniki
-{
-	display:block;
-	clear:both;
-	overflow:auto;
-	height:350px;
-}
-
 #panelboczny
 {
 	float:left;
@@ -107,6 +99,7 @@ body
 	background-color:#0d74bd;
 	margin-left: auto;
 	margin-right: auto;
+	text-align:center;
 	border-radius:10px;
 	-webkit-box-shadow: 2px 4px 24px 0px rgba(16,14,66,1);
 	-moz-box-shadow: 2px 4px 24px 0px rgba(16,14,66,1);
