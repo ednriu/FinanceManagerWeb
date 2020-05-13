@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Finanse Osobiste</title>
+		<meta name="description" content="Opis zawartości strony dla wyszukiwarek">
+		<meta name="keywords" content="słowa, kluczowe, opisujące, zawartość">
+		<meta name="author" content="Andrzej Konicki">		
+		<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+		
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="horizontal_menu.css">
+		
+		<script type="text/javascript" src="ustawienia_uzytkownika.js"></script>		
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rye&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+	</head>
+
+	<body>
+	
+		<div id="container">
+			<div id="logo">
+				<h1>Moje Finanse</h1>
+			</div>
+			
+			<div class="topnav">
+				<ol>
+					  <li><a href="przychod.html">Przychody</a></li>
+					  <li><a href="wydatek.html">Wydatki</a></li>
+					  <li><a href="bilans.html">Bilans</a></li>
+					  <li><a>Ustawienia</a>
+						<ul>
+						  <li><a href="ustawienia_uzytkownika.html">Ustawienia Użytkownika</a></li>
+						  <li><a href="ustawienia_kategorie.html">Kategorie</a></li>
+						  <li><a href="ustawienia_dane.html">Dane</a></li>
+						</ul>
+					  </li>
+					  <li><a href="uzytkownik.html">Wyloguj</a></li>
+				</ol>
+			</div>
+			
+			
+			<div id="panelboczny">
+				<div class="sidepanel">
+					<h1>Status</h1>
+					<p>Zalogowany</p>
+				</div>
+
+				<div class="sidepanel">
+					<h1>Imieniny</h1>
+					<p><script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt="></script></p>					
+				</div>
+				
+				<div id="login_panel">
+					<h1>Logowanie</h1>
+					<p>
+						<form action="_action.php" method="post">
+						<input type="text" id="login" placeholder="Login:">
+						<input type="password" id="pass" placeholder="Hasło:">
+						<input type="submit" value="Zaloguj">
+						</form>					
+					</p>
+				</div>
+			</div>			
+			<div id="content">
+			
+				<h1>Edycja Danych Użytkownika</h1>
+				<div id="formularz_dane"
+					<form action="login.php" method="post"/>
+							<label for="imie">Imie:</label>
+							<input type="text" id="imie">
+							<label for="email">Adres email:</label>							
+							<input type="text" id="email">
+							
+							<label for="oldpass">Stare Hasło:</label>							
+							<input type="password" id="oldpass" onchange="verify_new_pass(this);">
+							<label for="newpass1">Nowe Hasło:</label>							
+							<input type="password" id="newpass1" disabled="true">
+							<label for="newpass2">Powtórz Nowe Hasło:</label>							
+							<input type="password" id="newpass2" disabled="true">
+							
+							
+							<input type="submit" value="Zmień">
+							<input type="button" value="Anuluj">
+			</div>
+			
+			<div id="footer">
+				Wszelkie prawa zastrzeżone	
+			</div>
+			
+		</div>
+	</body>
+	
+</html>
