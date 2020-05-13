@@ -57,15 +57,15 @@
 				<div id="formularz_bilans">
 					<form action="_action.php" method="post">
 								<label class="container">Bieżący Miesiąc
-									<input type="radio" name="radio" checked>
+									<input type="radio" name="radio" checked onclick="handleClick2(this);"/>
 									<span class="checkmark"></span>
 								</label>
 								<label class="container">Poprzedni Miesiąc
-									<input type="radio" name="radio">
+									<input type="radio" name="radio" onclick="handleClick2(this);"/>
 									<span class="checkmark"></span>
 								</label>
 								<label class="container">Bieżący Rok
-									<input type="radio" name="radio">
+									<input type="radio" name="radio" onclick="handleClick2(this);"/>
 									<span class="checkmark"></span>
 								</label>
 								<label class="container">Niestandardowe
@@ -74,7 +74,7 @@
 								</label>
 								<br>
 								<label for="datep1">Data początkowa:</label>
-								<input type="date" id="datep1" name="data" disabled="true'=">
+								<input type="date" id="datep1" name="data" disabled="true">
 								<label for="datep2">Data końcowa:</label>
 								<input type="date" id="datep2" name="data" disabled="true"><br>
 								<input type="submit" value="Pokaż">

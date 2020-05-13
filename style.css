@@ -139,6 +139,12 @@ body
 	background-color: #e6ffff;
 }
 
+#formularz_dane input[type=text]:disabled,input[type=number]:disabled, input[type=date]:disabled, textarea:disabled,
+#formularz_bilans input[type=text]:disabled,input[type=number]:disabled, input[type=date]:disabled, textarea:disabled
+{
+	background-color: #C0CBD1;
+}
+
 #formularz_dane  textarea
 {
 	display:block;

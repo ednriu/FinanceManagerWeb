@@ -32,9 +32,8 @@ function test()
 {
 	alert("test Alert");
 };
-
+//click on the radio which disables other options
 function handleClick(myRadio) {
-	alert("działa1");
 	if(myRadio.value== "true")
 		{
 		document.getElementById("datep1").disabled = true;
@@ -44,6 +43,19 @@ function handleClick(myRadio) {
 		{
 		document.getElementById("datep1").disabled = false;
 		document.getElementById("datep2").disabled = false;
+		}
+};
+//click on the radio which enables other options
+function handleClick2(myRadio) {
+	if(myRadio.value== "true")
+		{
+		document.getElementById("datep1").disabled = false;
+		document.getElementById("datep2").disabled = false;
+		}
+	else
+		{
+		document.getElementById("datep1").disabled = true;
+		document.getElementById("datep2").disabled = true;
 		}
 };
 
