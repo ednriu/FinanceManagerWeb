@@ -20,6 +20,12 @@ body
 	padding:10px;
 }
 
+#logo h1 
+{
+	font-size:40px;
+	text-align:center;
+}
+
 .topnav {
   position: relative;
   overflow: hidden;
@@ -71,9 +77,16 @@ body
 	width:780px;
 	height:600px;
 	background-color:#9fcdf5;	
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size:10px;
 	overflow:auto;
+}
+
+#content h1
+{
+	font-size:30px;
+	text-align:center;
+	color:#0F6732;
 }
 
 #content h6
@@ -305,7 +318,6 @@ input[type=button]:hover
 #formularz_bilans input[type=text],input[type=number], input[type=date]
 {
 	display:inline-block;
-	margin-right:20px;
 	margin-bottom:7px;
 	width:130px;
 	box-sizing: border-box;
@@ -376,16 +388,19 @@ input[type=button]:hover
 .sidepanel h1
 {
 	font-size:16px;
+	font-family: 'Patrick Hand', cursive;
+	color:white;
 	background:#1862d2;
 	margin:0;
 	border-radius:10px 10px 0 0;
-	padding:3px 0;
+	padding:4px 0;
 }
 
 .sidepanel p
 {
 	text-align:center;
 	font-weight:normal;
+	color:#124426;
 }
 
 #login_panel
@@ -462,11 +477,20 @@ input[type=password]:focus
 
 #login_panel h1
 {
+	color:white;
 	font-size:16px;
+	font-family: 'Patrick Hand', cursive;
 	background:#1862d2;
 	margin:0;
 	border-radius:10px 10px 0 0;
-	padding:3px 0;
+	padding:4px 0;
+}
+
+#login_panel p
+{
+	text-align:center;
+	font-weight:normal;
+	color:#124426;
 }
 
 #footer
@@ -481,7 +505,7 @@ input[type=password]:focus
 
 h1 
 {
-	font-size:30px;
+	font-size:40px;
 	text-align:center;
 }
 
