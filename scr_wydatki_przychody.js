@@ -25,7 +25,6 @@ function TodayDate()
 		date = date + '-' +today.getDate();
 	};
 	document.getElementById('datep').value = date;
-	alert("działaTodayDate");
 };
 
 function test()
