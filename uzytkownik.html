@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="horizontal_menu.css">
 		
 		<script type="text/javascript" src="scr_wydatki_przychody.js"></script>
+		<script language="javascript" type="text/javascript" src="imieniny.js"></script>
 		
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rye&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -52,7 +53,7 @@
 
 				<div class="sidepanel">
 					<h1>Imieniny</h1>
-					<p><script type="text/javascript" src="http://404bajery.pl/imieniny/1imieniny.php?color=&txt="></script></p>					
+					<p><script language="javascript" type="text/javascript">WypiszImieniny("Dzisiaj są imieniny: <b>","</b>",", "," i ",0);</script></p>					
 				</div>
 				
 				<div id="login_panel">
@@ -67,17 +68,18 @@
 				</div>
 			</div>			
 			<div id="content">
-				<h1>Logowanie Użytkownika</h1>
-				<p>
-					<form action="login.php" method="post">
-					<label for="imie">Imię:</label>
-					<input type="text" id="imie" placeholder="Twoje Imię"> <br>
-					<label for="email">Email::</label>
-					<input type="text" id="email" placeholder="Twój @dres email"> <br>
-					<label for="pass">Hasło:</label>
-					<input type="password" id="pass">
-					</form>					
-				</p>
+					<h1>Rejestracja Użytkownika</h1>
+						<div id="formularz_dane">
+							<form action="_action.php" method="post">
+							<label for="imie">Imię:</label>
+							<input type="text" id="imie" placeholder="Twoje Imię"> <br>
+							<label for="email">Email:</label>
+							<input type="text" id="email" placeholder="Twój @dres email"> <br>
+							<label for="pass">Hasło:</label>
+							<input type="password" id="pass">
+							<input type="submit" value="Zarejestruj">
+							</form>					
+						</div>
 
 			</div>
 			
